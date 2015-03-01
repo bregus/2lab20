@@ -51,7 +51,7 @@ char *readline(char *prompt, int user_block_size) {
 
     *result = '\0';
 
-    for (;;) {
+    while (true) {
         if (fgets(block, block_size, stdin) == NULL) {
             break;
         }
